@@ -85,6 +85,4 @@ Solved/
 master/
 Master/
 # ignore instructor activities
-Ins_
-Ins/
-Ins
+**/*Ins*
