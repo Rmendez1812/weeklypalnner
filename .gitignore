@@ -2,6 +2,7 @@
 Solved/
 Master/
 Main/
+**/Main
 *.DS_Store
 # Logs
 logs
