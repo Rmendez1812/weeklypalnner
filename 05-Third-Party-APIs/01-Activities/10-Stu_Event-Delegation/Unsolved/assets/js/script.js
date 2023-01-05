@@ -29,7 +29,17 @@ function handleFormSubmit(event) {
 }
 
 // TODO: Create a function to handle removing a list item when `.delete-item-btn` is clicked
+function deleteItem() {
+
+  $(event.target).parent().remove()
+}
+shoppingListEl.on('click', ".delete-item-btn", deleteItem)
 
 // TODO: Use event delegation and add an event listener to `shoppingListEl` to listen for a click event on any element with a class of `.delete-item-btn` and execute the function created above
+
+// Add an event listener to all elements with the class '.delete-item-btn'
+//const deleteButtons = document.querySelectorAll('.delete-item-btn');
+//deleteButtons.forEach(button => button.addEventListener('click', deleteListItem));
+
 
 shoppingFormEl.on('submit', handleFormSubmit);

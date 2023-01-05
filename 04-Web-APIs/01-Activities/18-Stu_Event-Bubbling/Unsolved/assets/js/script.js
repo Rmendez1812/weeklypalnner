@@ -1,6 +1,6 @@
-// TODO: Which element is the following line of code selecting?
+// This code is selecting the carousel image
 var carousel = document.querySelector(".carouselbox");
-// TODO: Which element is the following line of code selecting?
+// This code is selecting the buttons on the carousel
 var next = carousel.querySelector(".next");
 var prev = carousel.querySelector(".prev");
 var index = 0;
@@ -26,22 +26,22 @@ function navigate(direction) {
   carousel.style.backgroundImage = "url('" + currentImage + "')";
 }
 
-// TODO: Describe the functionality of the following event listener.
+//Changes the images with the buttons are selected
 carousel.addEventListener("click", function() {
   window.location.href = images[index];
 });
 
-// TODO: Describe the functionality of the following event listener.
+// This code is running the action for the "Next" button
 next.addEventListener("click", function(event) {
-  // TODO: What is the purpose of the following line of code?
+  // Stopping the image from taking over the site
   event.stopPropagation();
 
   navigate(1);
 });
 
-// TODO: Describe the functionality of the following event listener.
+// This code is running the action for the "Previuos" button
 prev.addEventListener("click", function(event) {
-    // TODO: What would happen if we didn't add the following line of code?
+    //Stopping the image from taking over the site
   event.stopPropagation();
 
   navigate(-1);

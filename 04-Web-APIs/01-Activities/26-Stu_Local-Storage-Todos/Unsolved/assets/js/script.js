@@ -27,9 +27,9 @@ function renderTodos() {
   }
 }
 
-// TODO: What is the purpose of the following function?
+// What is the purpose of the following function? Means initialize this code first
 function init() {
-  // TODO: What is the purpose of the following line of code?
+  // What is the purpose of the following line of code? Creates separate objects
   var storedTodos = JSON.parse(localStorage.getItem("todos"));
   // TODO: Describe the functionality of the following `if` statement.
   if (storedTodos !== null) {

@@ -1,0 +1,25 @@
+pre {
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.5;
+    user-select: all;
+    background-image: linear-gradient(
+            rgba(228, 86, 86, 0.3) 0%,
+            rgba(234, 232, 89, 0.6) 100%
+            );
+}
+
+.code-card .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    }
+
+.code-card:hover, .code-card:hover .card-header {
+        box-shadow: inset 0px 0px 0px
+    rgba(232, 102, 236, 1), 0 0 15px
+    rgba(232, 102, 236, 1);
+    }
+
+.card-column {
+    flex: 1 0 100%
+}

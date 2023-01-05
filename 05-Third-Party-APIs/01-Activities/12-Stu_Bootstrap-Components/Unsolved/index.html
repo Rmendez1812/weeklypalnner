@@ -15,6 +15,15 @@
   <!-- Add a navbar here -->
   <!-- https://getbootstrap.com/docs/5.1/components/navbar/ -->
 
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand">Navbar</a>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
 
   <!-- create page margins -->
   <main class="container-fluid my-3">
@@ -24,11 +33,32 @@
     <!-- Add a dismissible alert here -->
     <!-- https://getbootstrap.com/docs/5.1/components/alerts/ -->
 
+    <div class="alert alert-danger" role="alert">
+      Connection is not secure
+    </div>
+
     <hr />
 
     <h2>Fill Out This Form!</h2>
     <!-- Add a form here -->
     <!-- https://getbootstrap.com/docs/5.1/forms/overview/ -->
+
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 
     <hr />
 
@@ -36,11 +66,29 @@
     <!-- Add a list with badges here -->
     <!-- https://getbootstrap.com/docs/5.1/components/list-group/ -->
 
+    <ul class="list-group">
+      <li class="list-group-item">2 dogs</li>
+      <li class="list-group-item">3 cats</li>
+      <li class="list-group-item">1 parrot</li>
+      <li class="list-group-item">9 fish/li>
+      <li class="list-group-item">5 rats</li>
+    </ul>
+
     <hr />
 
     <h2>Check Out This Card!</h2>
     <!-- Add a card with a header, list, and footer here  -->
     <!-- https://getbootstrap.com/docs/5.1/components/card/ -->
+
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+    </div>
 
   </main>
 

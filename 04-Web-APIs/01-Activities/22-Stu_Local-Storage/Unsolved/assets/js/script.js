@@ -5,6 +5,7 @@ var msgDiv = document.querySelector("#msg");
 var userEmailSpan = document.querySelector("#user-email");
 var userPasswordSpan = document.querySelector("#user-password");
 
+
 renderLastRegistered();
 
 function displayMessage(type, message) {
@@ -13,7 +14,12 @@ function displayMessage(type, message) {
 }
 
 function renderLastRegistered() {
-  // TODO: Retrieve the last email and password and render it to the page
+  // Retrieve the last email and password and render it to the page
+ var email = localStorage.getItem(email);
+ var password = localStorage.getItem(password);
+ 
+ userEmailSpan.textContent = email;
+ userPasswordSpan.textContent = password;
 }
 
 signUpButton.addEventListener("click", function(event) {
@@ -29,6 +35,9 @@ signUpButton.addEventListener("click", function(event) {
   } else {
     displayMessage("success", "Registered successfully");
 
-  // TODO: Save email and password to localStorage and render the last registered user
-  }
+  //Save email and password to localStorage and render the last registered user
+  localStorage.setItem('email', email);
+  localStorage.setItem('password', password);
+  renderLastRegistered();
+}
 });

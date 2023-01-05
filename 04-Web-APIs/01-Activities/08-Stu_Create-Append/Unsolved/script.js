@@ -17,6 +17,11 @@ h1El.textContent = "Welcome to my page";
 kittenEl.textContent = "This is my kitten 🐱.";
 nameEl.textContent = "His name is Jax.";
 favoriteEl.textContent = "My favorite foods are:";
+//added food
+li1.textContent = "fish";
+li2.textContent = "dog";
+li3.textContent = "birds";
+li4.textContent = 'apples';
 
 body.appendChild(h1El);
 body.appendChild(infoEl);
@@ -27,6 +32,11 @@ body.appendChild(favoriteEl);
 favoriteEl.appendChild(listEl);
 // Append ordered list 
 favoriteEl.appendChild(listEl);
+//addded list
+listEl.appendChild(li1);
+listEl.appendChild(li2);
+listEl.appendChild(li3);
+listEl.appendChild(li4);
 
 h1El.setAttribute("style", "margin:auto; width:50%; text-align:center;");
 infoEl.setAttribute("style", "margin:auto; width:50%; text-align:center;");
@@ -36,3 +46,7 @@ kittenEl.setAttribute("style", "font-size:25px; text-align:center;");
 favoriteEl.setAttribute("style", "font-size:20px;");
 
 // TODO: Add ordered list items containing four favorite foods
+li1.setAttribute("style", "color:white, background:#555555, padding:5px; margin-left:35px");
+li2.setAttribute("style", "color:white, background:#666666, padding:5px; margin-left:35px");
+li3.setAttribute("style", "color:white, background:#777777, padding:5px; margin-left:35px");
+li4.setAttribute("style", "color:white, background:#888888, padding:5px; margin-left:35px");

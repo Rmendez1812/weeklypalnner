@@ -1,12 +1,12 @@
-// TODO: What does 'this' refer to?
+// What does 'this' refer to? = The window/properties of the console
 console.log(this);
 
-// TODO: What does 'this' refer to?
+// What does 'this' refer to? = The certian Objects window/properties
 function helloThis() { 
    console.log("Inside this function, this is " + this); 
    }
 
-// TODO: What will this log? 
+// What will this log? = 'THIS' references a variable of the same object which for this example is 'age'
 var child = { 
    age: 10,
    ageTenYears: function() {
@@ -14,7 +14,7 @@ var child = {
    }
 };
 
-// TODO: What will this log? 
+// What will this log? 'THIS' references a variable of the same object which for this example is 'initialInvestment'
 var investor = {  
   name: "Cash Saver",
   investment: {
@@ -31,3 +31,4 @@ helloThis();
 // TODO: After commenting, check your results!
 child.ageTenYears();
 investor.investment.investmentGrowth();
+
